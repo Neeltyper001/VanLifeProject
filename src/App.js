@@ -8,12 +8,15 @@ import Dashboard from './components/host-components/dashboard/dashboard';
 import Income from './components/host-components/income/income';
 import Reviews from './components/host-components/reviews/reviews';
 import VanHost from './components/host-components/vans/VanHost';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
+    <>
+    <SpeedInsights />
     <BrowserRouter>      
     <Routes>
       <Route path='/' element={<IntroPage/>} > 
@@ -30,6 +33,7 @@ function App() {
       </Route>        
     </Routes>
   </BrowserRouter>
+    </>
   );
 }
 
