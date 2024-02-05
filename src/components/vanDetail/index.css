@@ -1,0 +1,130 @@
+:root {
+    --main-width:548.15px;
+    --mobi-width: 300px;
+}
+.back-navigation{
+    margin-left: 2rem;
+}
+.back-navigation a{
+    text-decoration: underline;
+    color:#161616;
+}
+
+.van-detail-container{
+    display: flex;
+    justify-content:center;   
+    margin-top:40.79px;
+    margin-bottom:84.71px; 
+}
+
+.van-detail-container > div{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: center;
+    width:fit-content;   
+    gap:50.38px; 
+}
+
+.van-detail-container img{
+    width:var(--main-width);
+    border-radius: 5px;    
+  }
+
+.van-description-body{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.van-description-body p:nth-of-type(1){
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.van-description-body p:nth-of-type(2){
+    width:var(--main-width);
+}
+
+.tag{
+    width: 85.71px;
+    height: 33.89px;
+    top: 756px;
+    left: 27.06px;
+    border-radius: 5px;
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #E17654;
+    color:#FFEAD0;
+}
+
+.title{
+    font-family: 'Inter' , sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.van-detail-container > span{
+    display:block;
+}
+
+.van-description-body p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.van-description-body button{
+    padding: 5px;
+    font-family: 'Inter' , sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #FF8C38;
+    color:#FFFFFF;
+    border: solid #FF8C38;
+    border-radius:4.98px;
+}
+
+.rugged{
+    background-color: #115E59;
+}
+
+.simple{
+    background-color: #E17654;
+}
+
+.luxury{
+    background-color: #161616;
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .van-detail-container img{
+        width:var(--mobi-width);
+    }
+
+    .van-description-body p:nth-last-of-type(1){
+        width:var(--mobi-width);
+    }
+}
+

@@ -1,0 +1,106 @@
+body{
+    background:#FFF7ED;
+}
+.image-container{
+    width:100%;
+}
+.about-image{
+    width: 100%;
+    object-fit:cover;
+}
+
+.about-container{
+    box-sizing: border-box;
+    padding: 4rem;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    width:fit-content;
+    gap: 25px;
+}
+
+.about-container-heading{
+    color:#161616;
+    font-family: 'Inter' , sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.about-container-heading + p{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#161616;
+}
+
+.about-container-card-parent{
+    position: relative;
+    width: 100%;
+    height: 17rem;
+}
+
+.about-container-card{
+    position: absolute;
+    width: fit-content;
+    box-sizing:border-box;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    left: 5%;
+    transform:translate(-2.5%);
+}
+
+.about-container-card h1{
+    font-family: 'Inter' , sans-serif;
+    font-size: 24px;
+    font-weight: 700px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#161616;
+}
+.about-container-card button{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#FFFFFF;
+    width: 174px;
+    height: 50px;
+    background-color:#161616;
+    border-radius:10px;
+}
+
+.listed-vans{
+    padding:2rem;
+    background:#FFF7ED;
+}
+
+.listed-vans-title{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listed-vans-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 419px;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+

@@ -1,0 +1,26 @@
+.host-page{
+    background-color:#FFF7ED;
+}
+
+.host-page-nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.host-page-nav li{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4D4D4D;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight:700;
+}

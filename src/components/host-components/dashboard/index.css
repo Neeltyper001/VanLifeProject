@@ -1,0 +1,129 @@
+.dashboard{
+    display:flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFEAD0;    
+}
+
+.headings{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.headings>h1{
+    font-family: Inter;
+font-size: 36px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.headings p:first-child{
+    font-family: 'Inter' , sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.headings p:last-child{
+    font-family: 'Inter' , sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+}
+
+.headings p span{
+    text-decoration: underline;
+}
+
+.review-score{
+    display: flex;
+    padding: 3rem;
+    justify-content:space-around;  
+    background-color: #FFDDB2;  
+}
+
+.review-score>div{
+    display:flex;
+    gap:1rem;
+    justify-content: space-between;
+}
+
+.review-score>div h2{
+    font-family: 'Inter', sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.review-score>div p span:last-child{
+    font-family: 'Inter' , sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color:#161616;
+}
+
+
+.star{
+    width: 26.65px;
+    height: 24px;
+    top: 476px;
+    left: 195px;
+    color:#FF8C38;
+}
+
+.listed-vans{
+    padding:2rem;
+    background:#FFF7ED;
+}
+
+.listed-vans-title{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listed-vans-title h3{
+    font-family: 'Inter' , sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.listed-vans-title p{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    
+}
+
+.listed-vans-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 419px;
+    gap: 15px;
+    overflow-y: scroll;
+}

@@ -1,0 +1,43 @@
+.menu{
+    height:100vh;
+    width: 35%;
+    display:flex;
+    position:fixed;
+    right: 0;
+    background-color:#161616;
+    opacity: 0.8;
+    padding: 2rem;
+    z-index:3;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style:none;
+}
+
+.menu ul li{
+    color: #FFF7ED;    
+    font-family: 'Inter' , sans-serif;
+    background-color: #000000;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 568px){
+    .menu{
+        width: 100%;
+        opacity:0.95;    
+    }
+
+    .menu ul{
+        position: relative;
+        top: 2rem;
+        left: 50%;        
+    }
+}

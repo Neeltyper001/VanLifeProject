@@ -1,0 +1,54 @@
+.group-235{    
+    height: 76vh;
+    background-image: url('/public/images/main_img.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.group-235-div{
+    position:absolute;
+    width: calc(100% - 53.82px);
+    top: 177.4px;
+    left: 50%;
+    transform:translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 25px;
+}
+
+#group-235-heading{
+    color:white;
+    font-family: 'Inter' , sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 75%;
+}
+
+#group-235-para{
+    color:white;
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 75%;
+}
+
+#group-235-button{
+    color:white;
+    font-family: 'Inter' , sans-serif;
+    font-size:15.95px;
+    font-weight:700px;
+    background-color: #FF8C38;
+    height:49.83px;
+    border-radius:5px;
+    width: 25%;
+}
+

@@ -1,0 +1,44 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+.item-container-outer{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius:5px;
+}
+
+.item-container-inner{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-image-container{
+    width: 96px;
+    height:96px;
+}
+
+.item-image-container img{
+    height:100%;
+    width:100%;
+    border-radius:5px;
+}
+
+.item-detail{
+    display:flex;
+    flex-direction:column;
+    gap: 15px;
+}
+
+.edit-item{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+}

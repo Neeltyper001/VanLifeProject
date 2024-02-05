@@ -1,0 +1,39 @@
+.listed-vans{
+    padding:2rem;
+    background:#FFF7ED;
+}
+
+.listed-vans-title{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listed-vans-title h3{
+    font-family: 'Inter' , sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.listed-vans-title p{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    
+}
+
+.listed-vans-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 419px;    
+    overflow-y: scroll;
+    overflow-x:hidden;
+}

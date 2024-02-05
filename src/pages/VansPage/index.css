@@ -1,0 +1,43 @@
+body{
+    background:#FFF7ED;
+}
+.van-options{
+    width: 90%;
+    text-align:left;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#161616;
+}
+
+.vans-container{
+    margin-top: 54.69px;
+    margin-bottom: 83.23px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px 6.8%;
+}
+
+.loading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:76vh;
+}
+
+@media screen and (max-width:1200px){
+    .vans-container{
+        grid-template-columns: 1fr;   
+        place-items:center;
+    }
+}

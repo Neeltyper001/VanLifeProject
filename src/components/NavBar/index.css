@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.navBar{
+    width: auto;
+    height:116.2px;
+    position: relative;
+    background: #FFF7ED;
+
+}
+
+
+#vanLife{
+    position:absolute;
+    width: 144.51px;
+    height: 41px;
+    top: 36px;
+    left: 26px;
+    font-family: 'Inter' , sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration:none;
+    color:#000000;    
+}
+
+
+.group-207{
+    position: absolute;
+    width: 116.61px;
+    height: 22.92px;
+    top: 45.12px;
+    right: 142.42px; 
+    display: flex;   
+    justify-content: right;
+    align-items: center;  
+    list-style:none;
+    gap:25px;          
+}
+
+a{
+    text-decoration: none;
+}
+
+#about{
+    text-decoration: none;
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #4D4D4D;    
+}
+
+#vans{
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #4D4D4D;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px){
+    .navBar ul{
+        right: 2rem;
+    }
+}
+
