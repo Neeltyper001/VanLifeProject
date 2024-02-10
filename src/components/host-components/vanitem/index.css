@@ -42,3 +42,13 @@
     letter-spacing: 0em;
     text-align: right;
 }
+
+@media screen and (max-width:568px){
+    .item-container-outer{
+        flex-direction: column;
+    }
+
+    .edit-item{
+        align-self: flex-end;
+    }
+}

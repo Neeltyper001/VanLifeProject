@@ -20,8 +20,10 @@ const HostPage = () => {
       <VanItem 
       vanItemId = {index}
       name={eachVan.name}
+      description = {eachVan.description}
       price={eachVan.price}
       image={eachVan.image_url}
+      type={eachVan.type}
     />
     )
  })

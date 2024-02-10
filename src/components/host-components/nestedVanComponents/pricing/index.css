@@ -1,0 +1,13 @@
+@import url("https://fonts.google.com/specimen/Inter");
+.pricing-section {
+    padding: 3vh 0;
+}
+.pricing-section p span{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#161616;    
+}

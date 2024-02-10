@@ -4,8 +4,8 @@ import { ListedVanContext } from '../../../contexts/listedVanContext'
 import { useContext } from 'react'
 const ListedVans = () => {
 
-const listedVans = useContext(ListedVanContext)
-console.log(listedVans)
+const listVans = useContext(ListedVanContext)
+console.log(listVans)
   return (
     <section className='listed-vans'>
     <div className='listed-vans-title'>
@@ -14,7 +14,7 @@ console.log(listedVans)
     </div>
 
     <div className='listed-vans-container'>
-          {listedVans}
+          {listVans}
     </div>
   </section>
   )

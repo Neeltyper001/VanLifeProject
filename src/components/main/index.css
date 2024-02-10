@@ -11,7 +11,8 @@
     width: calc(100% - 53.82px);
     top: 177.4px;
     left: 50%;
-    transform:translate(-50%);
+    top: 50%;
+    transform:translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +27,7 @@
     font-weight: 800;
     line-height: 42px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     width: 75%;
 }
 
@@ -37,7 +38,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     width: 75%;
 }
 
@@ -52,3 +53,18 @@
     width: 25%;
 }
 
+@media screen and (max-width:568px){
+    #group-235-heading{
+        font-size:26px;
+        line-height:36px;
+    }
+
+    #group-235-para{
+        font-size:14px;
+        line-height:24px;
+    }
+
+    #group-235-button{
+        width:100%;
+    }
+}

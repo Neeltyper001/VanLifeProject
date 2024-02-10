@@ -1,0 +1,95 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+.van-host-outer{
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap:2rem;
+}
+
+.back-to-vans{
+    color:#000000;
+    margin-left: 2rem;
+}
+
+.van-host-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    width:34rem;
+}
+.van-host-inner img{
+    border-radius: 5px;
+    height:160px;
+    width:157px;
+}
+
+.van-host-inner div>span{
+    padding: 3px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#FFEAD0;
+    border-radius:5px;
+
+}
+
+.van-host-inner div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.nested-hosted-vans{
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+    width:34rem;    
+}
+
+.nested-hosted-vans li{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#000000;
+
+}
+
+.rugged{
+    background-color: #115E59;
+}
+
+.simple{
+    background-color: #E17654;
+}
+
+.luxury{
+    background-color: #161616;
+}
+
+
+@media screen and (max-width:568px){
+    .van-host-inner{
+        flex-direction: column;
+        gap:1rem;
+        width: 17rem;
+    }
+
+    .nested-hosted-vans{
+        width:17rem;
+    }
+
+    .van-host-inner>div{
+        gap: 10px;
+    }
+}
