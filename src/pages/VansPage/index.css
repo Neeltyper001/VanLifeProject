@@ -34,6 +34,46 @@ body{
     align-items: center;
     height:76vh;
 }
+.filters-container{
+    margin: 2rem 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    translate: 10%;
+    gap:2rem;
+    width:80%;
+}
+
+.van-filter-buttons{
+    display:block;    
+    color:#FFEAD0;
+    width: 85.71px;
+    height: 33.89px;    
+    border-radius: 5px;
+    font-family: 'Inter' , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.rugged{
+    background-color: #115E59;
+}
+
+.simple{
+    background-color: #E17654;
+}
+
+.luxury{
+    background-color: #161616;
+}
+
+.clear{
+    background-color: #ff0000;
+}
 
 @media screen and (max-width:1200px){
     .vans-container{
