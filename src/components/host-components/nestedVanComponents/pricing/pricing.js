@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.css'
-import { useContext } from 'react'
+import { useContext, } from 'react'
+import {useOutletContext} from 'react-router-dom'
 import { HostVanContext } from '../../../../contexts/hostVanContext'
 const Pricing = () => {
-  const vanData = useContext(HostVanContext)
+  const {vanContext} = useOutletContext()
   return (
     <section className='pricing-section'>
-      <p><span>{vanData.price}</span>/trip</p>
+      <p><span>{vanContext.price}</span>/trip</p>
     </section>
   )
 }

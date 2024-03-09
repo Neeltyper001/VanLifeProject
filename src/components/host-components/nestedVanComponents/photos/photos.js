@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.css'
 import { useContext } from 'react'
+import {useOutletContext} from 'react-router-dom'
 import { HostVanContext } from '../../../../contexts/hostVanContext'
 const Photos = () => {
-  const vanData = useContext(HostVanContext);
+  const {vanContext} = useOutletContext()
   return (
     <section className='photos-section'>
-      <img src={vanData.image} alt={vanData.name} />
+      <img src={vanContext.image} alt={vanContext.name} />
   </section>
   )
 }

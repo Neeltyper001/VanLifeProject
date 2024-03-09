@@ -2,8 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './index.css'
 
-const VanInfo = (props) => {  
-  console.log("Pappu");
+const VanInfo = (props) => {    
   return (
     <>
     <div className="back-navigation" ><NavLink to='/vans' > &larr; back to vans page </NavLink></div>

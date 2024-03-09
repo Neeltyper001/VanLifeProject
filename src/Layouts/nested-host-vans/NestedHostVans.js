@@ -6,24 +6,25 @@ import { useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
 import { HostVanContext } from '../../contexts/hostVanContext'
-
+import { useOutletContext } from 'react-router-dom'
 const NestedHostVans = () => {
     const param = useParams();
-    const listedVans = useContext(ListedVanContext);    
-    console.log(listedVans[0].props)
-    const VanData = listedVans[param.vanId].props
+    const listedVans = useContext(ListedVanContext);   
+    const {listVans} = useOutletContext();
+    const vanContext = listVans[param.vanId].props; //props for react element becauuse react element type object do have fields called "props"
+    // console.log(listedVans[0].props)
+    // const VanData = listedVans[param.vanId].props
     
   return (
-
-    <HostVanContext.Provider value={VanData}>
+      <>
         <NavLink to='..' relative='path'><p className='back-to-vans'><span>&#8592;</span> Back to vans page</p></NavLink>
         <div className='van-host-outer'>
             <div className='van-host-inner'>
-                <img src={VanData.image} alt='van-id' />
+                <img src={vanContext.image} alt='van-id' />
                 <div>
-                    <span className={`${VanData.type}`}>{VanData.type}</span>
-                    <h1>{VanData.name}</h1>
-                    <p>{VanData.price}<span>/day</span></p>
+                    <span className={`${vanContext.type}`}>{vanContext.type}</span>
+                    <h1>{vanContext.name}</h1>
+                    <p>{vanContext.price}<span>/day</span></p>
                 </div>
             </div>
 
@@ -33,9 +34,9 @@ const NestedHostVans = () => {
                 <NavLink to='photos'><li>Photos</li></NavLink>                
             
             </ul>
-            <Outlet/>
-        </div>
-    </HostVanContext.Provider>    
+            <Outlet context={{vanContext}}/>
+        </div>        
+    </>      
   )
 }
 

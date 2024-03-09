@@ -7,6 +7,7 @@ import VanItem from '../../components/host-components/vanitem/VanItem';
 import axios from 'axios';
 import { ListedVanContext } from '../../contexts/listedVanContext';
 
+
 const HostPage = () => {
   const [hostVansData , setHostVansData] = useState([]);
   useEffect(()=>{
@@ -18,6 +19,7 @@ const HostPage = () => {
  const listVans = hostVansData.map((eachVan,index) => {
     return (
       <VanItem 
+      key={index}
       vanItemId = {index}
       name={eachVan.name}
       description = {eachVan.description}
@@ -28,7 +30,7 @@ const HostPage = () => {
     )
  })
   return (
-  <ListedVanContext.Provider value={listVans}>
+  // <ListedVanContext.Provider value={listVans}>
     <div className='host-page'>
         <ul className='host-page-nav'>
             <NavLink end className={({isActive}) => isActive ? "active" : null} to='/host'><li>Dashboard</li></NavLink>
@@ -36,9 +38,9 @@ const HostPage = () => {
             <NavLink className={({isActive}) => isActive ? "active" : null} to='/host/vans'><li>Vans</li></NavLink>
             <NavLink className={({isActive}) => isActive ? "active" : null} to='/host/reviews'><li>Reviews</li></NavLink>
         </ul>
-        <Outlet />
+        <Outlet context={{listVans}}/>
     </div>
-  </ListedVanContext.Provider>
+  // </ListedVanContext.Provider>
   )
 }
 
