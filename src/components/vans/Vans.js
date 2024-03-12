@@ -2,7 +2,8 @@ import React from 'react'
 import './index.css'
 import { Link } from 'react-router-dom'
 
-const Vans = (props) => {  
+const Vans = (props) => {
+  // console.log(props.filterState.search)
   return (   
   
     <div id={props.vanId} className='van-card'>

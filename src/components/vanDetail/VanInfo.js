@@ -5,7 +5,7 @@ import './index.css'
 const VanInfo = (props) => {    
   return (
     <>
-    <div className="back-navigation" ><NavLink to={`../vans/${props.vanFilters}`} > &larr; back to vans page </NavLink></div>
+    <div className="back-navigation" ><NavLink to={`../vans/${props.vanFilters}`} > &larr; back to {` ${props.vanFilterQuery} `} vans page </NavLink></div>
     <div className="van-detail-container">    
       <div>
         <img src={props.vanImg} alt="your-van"/>

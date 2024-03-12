@@ -14,8 +14,8 @@ const VansPage = () => {
   const filterType = searchParams.get("type");
   
   const finalFilteredVans = filterType ? vans.filter(eachVan => eachVan.type === filterType) : vans;
-  console.log(filterType);
-  console.log(filterState)
+  // console.log(filterType);
+  // console.log(filterState)
   
 
   useEffect(()=>{

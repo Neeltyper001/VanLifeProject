@@ -10,11 +10,23 @@ const VanDetail = () => {
     const [vanDetail, setVanDetail] = useState(null);
     const params = useParams();
     const {state} = useLocation();    
+    
     useEffect(()=>{
         axios.get(`/vans/data/${params.vanId}`)
         .then( res => setVanDetail(res.data))
         .catch(error => console.log(error))        
     },[params.vanId])
+
+    
+    const vanType = ()=>{
+      const {search} = state;
+      if(search){
+        const searchQueryArray = search.split('=');
+        const vanTypeData = searchQueryArray[searchQueryArray.length - 1];
+        return vanTypeData;
+      }
+      return ''
+    }    
   return (
     <>
             {vanDetail ?
@@ -26,6 +38,7 @@ const VanDetail = () => {
                 vanPrice={vanDetail.price}
                 vanType={vanDetail.type}
                 vanFilters={state.search}
+                vanFilterQuery={vanType()}
                 />   
                 :
                     <div className="loading">
