@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,useLocation } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import VanInfo from '../../components/vanDetail/VanInfo'
 import axios from 'axios'
@@ -9,6 +9,7 @@ import './index.css'
 const VanDetail = () => {        
     const [vanDetail, setVanDetail] = useState(null);
     const params = useParams();
+    const {state} = useLocation();    
     useEffect(()=>{
         axios.get(`/vans/data/${params.vanId}`)
         .then( res => setVanDetail(res.data))
@@ -23,7 +24,8 @@ const VanDetail = () => {
                 vanDesc={vanDetail.description}
                 vanImg={vanDetail.image_url}
                 vanPrice={vanDetail.price}
-                vanType={vanDetail.type}                
+                vanType={vanDetail.type}
+                vanFilters={state.search}
                 />   
                 :
                     <div className="loading">

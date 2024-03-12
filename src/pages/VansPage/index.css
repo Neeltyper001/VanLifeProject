@@ -46,7 +46,7 @@ body{
 
 .van-filter-buttons{
     display:block;    
-    color:#FFEAD0;
+    
     width: 85.71px;
     height: 33.89px;    
     border-radius: 5px;
@@ -57,22 +57,28 @@ body{
     letter-spacing: 0em;
     text-align: center;
     cursor:pointer;
+    background-color: #ffe4b2;
+    color:#000000;
 }
 
 .rugged{
     background-color: #115E59;
+    color:#FFEAD0;
 }
 
 .simple{
     background-color: #E17654;
+    color:#FFEAD0;
 }
 
 .luxury{
     background-color: #161616;
+    color:#FFEAD0;
 }
 
 .clear{
     background-color: #ff0000;
+    color:#FFEAD0;
 }
 
 @media screen and (max-width:1200px){
