@@ -17,6 +17,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import PageNotFound from './pages/404Page/PageNotFound';
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
                 <Route path='photos' element={<Photos/>} />
             </Route>
             <Route path='reviews' element={<Reviews />} />            
-        </Route>    
+        </Route>  
+        <Route path='*' element={<PageNotFound/>} /> 
       </Route>        
     </Routes>
   </BrowserRouter>
